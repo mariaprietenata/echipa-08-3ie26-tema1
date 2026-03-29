@@ -1,0 +1,214 @@
+/* =============================================
+   RASE PAGE - rase.css
+   ============================================= */
+
+/* Breed nav bar */
+.breed-nav-bar {
+  background: var(--warm-white);
+  border-bottom: 1px solid var(--parchment);
+  position: sticky;
+  top: var(--nav-height);
+  z-index: 100;
+}
+
+.breed-nav {
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.breed-nav::-webkit-scrollbar { display: none; }
+
+.breed-nav a {
+  flex-shrink: 0;
+  padding: 1rem 1.8rem;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--mist);
+  border-bottom: 3px solid transparent;
+  transition: all var(--transition);
+}
+
+.breed-nav a:hover {
+  color: var(--caramel);
+  border-bottom-color: var(--caramel);
+}
+
+/* Breed sections */
+.breed-section {
+  padding: 5rem 0;
+}
+
+.breed-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.breed-layout.reverse {
+  direction: rtl;
+}
+
+.breed-layout.reverse > * {
+  direction: ltr;
+}
+
+/* Breed visual */
+.breed-visual {
+  position: relative;
+}
+
+.breed-main-img {
+  width: 100%;
+  height: 480px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 24px 60px var(--soft-shadow);
+}
+
+.ragdoll-hero-img {
+  background: linear-gradient(160deg, #c8b8a0 0%, #8a7060 100%),
+    url('https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=80') center/cover;
+}
+
+.bengal-hero-img {
+  background: linear-gradient(160deg, #d4a870 0%, #8b5a28 100%),
+    url('https://images.unsplash.com/photo-1575936123452-b67c3203c357?w=800&q=80') center/cover;
+}
+
+.mainecoon-hero-img {
+  background: linear-gradient(160deg, #b8c4a4 0%, #708050 100%),
+    url('https://images.unsplash.com/photo-1568152950566-c1bf43f4ab28?w=800&q=80') center/cover;
+}
+
+.british-hero-img {
+  background: linear-gradient(160deg, #b8c4d8 0%, #607898 100%),
+    url('https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?w=800&q=80') center/cover;
+}
+
+.breed-badge {
+  position: absolute;
+  bottom: -1rem;
+  left: 2rem;
+  background: var(--caramel);
+  color: var(--warm-white);
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1.4rem;
+  border-radius: 50px;
+  box-shadow: 0 8px 24px rgba(200, 137, 74, 0.4);
+}
+
+.bengal-badge   { background: #9b6535; }
+.mainecoon-badge { background: #5a7040; }
+.british-badge  { background: #506080; }
+
+/* Breed info */
+.breed-tagline {
+  font-family: var(--font-heading);
+  font-style: italic;
+  color: var(--mist);
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+
+/* Specs grid */
+.breed-specs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  margin: 1.8rem 0;
+}
+
+.spec-item {
+  background: var(--cream);
+  border-radius: 10px;
+  padding: 0.9rem 1.2rem;
+  border: 1px solid var(--parchment);
+}
+
+.spec-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--mist);
+  margin-bottom: 0.2rem;
+}
+
+.spec-value {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  color: var(--espresso);
+  font-weight: 600;
+}
+
+/* Trait bars */
+.trait-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.trait {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.trait-name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--bark);
+  width: 120px;
+  flex-shrink: 0;
+}
+
+.trait-bar {
+  flex: 1;
+  height: 6px;
+  background: var(--parchment);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.trait-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--caramel), var(--caramel-dark));
+  border-radius: 3px;
+  width: 0;
+  transition: width 1s ease 0.3s;
+}
+
+.trait-fill.animated {
+  /* width set inline, animation applied via JS */
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+@media (max-width: 900px) {
+  .breed-layout,
+  .breed-layout.reverse {
+    grid-template-columns: 1fr;
+    direction: ltr;
+    gap: 2.5rem;
+  }
+
+  .breed-main-img {
+    height: 320px;
+  }
+}
