@@ -241,23 +241,19 @@
 
 /* Placeholder gradient backgrounds per breed */
 .ragdoll-img {
-  background: linear-gradient(135deg, #d4c4b0, #a89080),
-    url('https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80') center/cover;
+  background: url('../img/ragdoll-card.jpg') center/cover no-repeat;
 }
 
 .bengal-img {
-  background: linear-gradient(135deg, #c8a87a, #8b6040),
-    url('https://images.unsplash.com/photo-1575936123452-b67c3203c357?w=600&q=80') center/cover;
+  background: url('../img/bengal-card.jpg') center/cover no-repeat;
 }
 
 .mainecoon-img {
-  background: linear-gradient(135deg, #b8c4a0, #7a8860),
-    url('https://images.unsplash.com/photo-1568152950566-c1bf43f4ab28?w=600&q=80') center/cover;
+  background: url('../img/mainecoon-card.jpg') center/cover no-repeat;
 }
 
 .british-img {
-  background: linear-gradient(135deg, #c0c8d8, #8090a8),
-    url('https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?w=600&q=80') center/cover;
+  background: url('../img/british-card.jpg') center/cover no-repeat;
 }
 
 .breed-card-overlay {
