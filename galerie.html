@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galerie - Feline World</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/galerie.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Feline<span>World</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Acasa</a></li>
+        <li><a href="rase.html">Rase</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Meniu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu">
+    <ul>
+      <li><a href="index.html">Acasa</a></li>
+      <li><a href="rase.html">Rase</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <main class="page-offset">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="section-label">Frumusete felina</p>
+        <h1>Galerie Foto</h1>
+        <p>O colectie de imagini cu cele mai elegante rase de pisici domestice</p>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="section">
+      <div class="container">
+
+        <!-- Filter buttons -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">Toate</button>
+          <button class="filter-btn" data-filter="ragdoll">Ragdoll</button>
+          <button class="filter-btn" data-filter="bengal">Bengal</button>
+          <button class="filter-btn" data-filter="mainecoon">Maine Coon</button>
+          <button class="filter-btn" data-filter="british">British Shorthair</button>
+        </div>
+
+        <!-- Gallery grid -->
+        <div class="gallery-grid" id="gallery">
+
+          <!-- Ragdoll images -->
+          <div class="gallery-item ragdoll fade-in" data-breed="ragdoll">
+            <div class="gallery-img" style="background: linear-gradient(135deg,#c8b8a0,#8a7060); background-image: url('https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80'); background-size:cover; background-position:center;"></div>
+            <div class="gallery-label"><span>Ragdoll</span></div>
+          </div>
+
+          <div class="gallery-item ragdoll tall fade-in" data-breed="ragdoll">
+            <div class="gallery-img" style="background: linear-gradient(135deg,#d4c4a8,#9a8068); background-image: url('https://images.unsplash.com/photo-1574158622682-e40e69881006?w=600&q=80'); background-size:cover; background-position:center;"></div>
+            <div class="gallery-label"><span>Ragdoll</span></div>
+          </div>
+
+          <div class="gallery-item ragdoll wide fade-in" data-breed="ragdoll">
+            <div class="gallery-img" style="background: linear-gradient(135deg,#b8a890,#7a6850); background-image: url('https://images.unsplash.com/photo-1518791841217-8f162f1912da?w=800&q=80'); background-size:cover; background-position:center;"></div>
+            <div class="gallery-label"><span>Ragdoll</span></div>
+          </div>
+
+          <!-- Bengal images -->
+          <div class="gallery-item bengal tall fade-in" data-breed="bengal">
+            <div class="gallery-img" style="background: linear-gradient(135deg,#d4a870,#8b5a28); background-image: url('https://images.unsplash.com/photo-1575936123452-b67c3203c357?w=600&q=80'); background-size:cover; background-position:center;"></div>
+            <div class="gallery-label"><span>Bengal</span></div>
+          </div>
+
+          <div class="gallery-item bengal fade-in" data-breed="bengal">
+            <div class="gallery-img" style="background: linear-gradient(135deg,#c89858,#7a4818); background-image: url('https://images.unsplash.com/photo-1560114928-40f1f1eb26a0?w=600&q=80'); background-size:cover; background-position:center;"></div>
+            <div class="gallery-label"><span>Bengal</span></div>
+          </div>
+
+          <div class="gallery-item bengal wide fade-in" data-breed="bengal">
+            <div class="gallery-img" style="background: linear-gradient(135deg,#d8b880,#986038); background-image: url('https://images.unsplash.com/photo-1513245543132-31f507417b26?w=800&q=80'); background-size:cover; background-position:center;"></div>
+            <div class="gallery-label"><span>Bengal</span></div>
+          </div>
+
+          <!-- Maine Coon images -->
+          <div class="gallery-item mainecoon wide fade-in" data-breed="mainecoon">
+            <div class="gallery-img" style="background: linear-gradient(135deg,#b8c4a4,#708050); background-image: url('https://images.unsplash.com/photo-1568152950566-c1bf43f4ab28?w=800&q=80'); background-size:cover; background-position:center;"></div>
+            <div class="gallery-label"><span>Maine Coon</span></div>
+          </div>
+
+          <div class="gallery-item mainecoon fade-in" data-breed="mainecoon">
+            <div class="gallery-img" style="background: linear-gradient(135deg,#a8b890,#607040); background-image: url('https://images.unsplash.com/photo-1552933529-e359b2477252?w=600&q=80'); background-size:cover; background-position:center;"></div>
+            <div class="gallery-label"><span>Maine Coon</span></div>
+          </div>
+
+          <div class="gallery-item mainecoon tall fade-in" data-breed="mainecoon">
+            <div class="gallery-img" style="background: linear-gradient(135deg,#c4d0b0,#809060); background-image: url('https://images.unsplash.com/photo-1548247416-ec66f4900b2e?w=600&q=80'); background-size:cover; background-position:center;"></div>
+            <div class="gallery-label"><span>Maine Coon</span></div>
+          </div>
+
+          <!-- British Shorthair images -->
+          <div class="gallery-item british fade-in" data-breed="british">
+            <div class="gallery-img" style="background: linear-gradient(135deg,#b8c4d8,#607898); background-image: url('https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?w=600&q=80'); background-size:cover; background-position:center;"></div>
+            <div class="gallery-label"><span>British Shorthair</span></div>
+          </div>
+
+          <div class="gallery-item british tall fade-in" data-breed="british">
+            <div class="gallery-img" style="background: linear-gradient(135deg,#a8b8d0,#486080); background-image: url('https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=600&q=80'); background-size:cover; background-position:center;"></div>
+            <div class="gallery-label"><span>British Shorthair</span></div>
+          </div>
+
+          <div class="gallery-item british wide fade-in" data-breed="british">
+            <div class="gallery-img" style="background: linear-gradient(135deg,#c0cce0,#708898); background-image: url('https://images.unsplash.com/photo-1583795484071-3c453e3a7c71?w=800&q=80'); background-size:cover; background-position:center;"></div>
+            <div class="gallery-label"><span>British Shorthair</span></div>
+          </div>
+
+        </div>
+        <!-- end gallery-grid -->
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">Feline<span>World</span></a>
+          <p>Un spatiu dedicat raselor de pisici si celor care le iubesc.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigare</h4>
+          <ul>
+            <li><a href="index.html">Acasa</a></li>
+            <li><a href="rase.html">Rase</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Rase</h4>
+          <ul>
+            <li><a href="rase.html#ragdoll">Ragdoll</a></li>
+            <li><a href="rase.html#bengal">Bengal</a></li>
+            <li><a href="rase.html#mainecoon">Maine Coon</a></li>
+            <li><a href="rase.html#british">British Shorthair</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 FelineWorld. Realizat cu <span style="color:var(--caramel);">&#9829;</span> pentru pasionatii de pisici.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/galerie.js"></script>
+</body>
+</html>

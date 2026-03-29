@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Feline World</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Feline<span>World</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Acasa</a></li>
+        <li><a href="rase.html">Rase</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Meniu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu">
+    <ul>
+      <li><a href="index.html">Acasa</a></li>
+      <li><a href="rase.html">Rase</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <main class="page-offset">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="section-label">Suntem aici pentru tine</p>
+        <h1>Contacteaza-ne</h1>
+        <p>Ai intrebari despre rase, ingrijire sau vrei sa ne spui povestea pisicii tale? Scriem-ne!</p>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Info column -->
+          <div class="contact-info">
+            <p class="section-label">Informatii</p>
+            <h2 class="section-title">Ia legatura<br>cu noi</h2>
+            <div class="divider"></div>
+            <p>
+              Echipa FelineWorld este formata din pasionati de pisici care raspund
+              cu drag la orice intrebare. Nu ezita sa ne scrii!
+            </p>
+
+            <div class="info-cards">
+
+              <div class="info-card fade-in">
+                <div class="info-icon">&#9993;</div>
+                <div>
+                  <h4>Email</h4>
+                  <p>contact@felineworld.ro</p>
+                </div>
+              </div>
+
+              <div class="info-card fade-in">
+                <div class="info-icon">&#128205;</div>
+                <div>
+                  <h4>Locatie</h4>
+                  <p>Timisoara, Romania</p>
+                </div>
+              </div>
+
+              <div class="info-card fade-in">
+                <div class="info-icon">&#128337;</div>
+                <div>
+                  <h4>Program raspuns</h4>
+                  <p>Luni - Vineri, 09:00 - 18:00</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Decorative cat paw pattern -->
+            <div class="paw-decoration" aria-hidden="true">
+              &#128062; &#128062; &#128062;
+            </div>
+          </div>
+
+          <!-- Form column -->
+          <div class="contact-form-wrap fade-in">
+            <div class="contact-form-card">
+              <h3>Trimite un mesaj</h3>
+              <p class="form-desc">Completati formularul de mai jos si va vom raspunde in cel mai scurt timp.</p>
+
+              <div id="formSuccess" class="form-success" style="display:none;">
+                <span>&#10003;</span>
+                <p>Multumim! Mesajul tau a fost trimis cu succes. Te vom contacta curand.</p>
+              </div>
+
+              <form id="contactForm" novalidate>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="firstName">Prenume <span class="required">*</span></label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Ion" required />
+                    <span class="field-error" id="firstNameError"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="lastName">Nume <span class="required">*</span></label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Popescu" required />
+                    <span class="field-error" id="lastNameError"></span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Adresa de Email <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" placeholder="ion.popescu@email.ro" required />
+                  <span class="field-error" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subiect</label>
+                  <select id="subject" name="subject">
+                    <option value="">-- Alege un subiect --</option>
+                    <option value="ragdoll">Intrebare despre Ragdoll</option>
+                    <option value="bengal">Intrebare despre Bengal</option>
+                    <option value="mainecoon">Intrebare despre Maine Coon</option>
+                    <option value="british">Intrebare despre British Shorthair</option>
+                    <option value="general">Intrebare generala</option>
+                    <option value="altele">Altele</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Mesaj <span class="required">*</span></label>
+                  <textarea id="message" name="message" rows="5" placeholder="Scrie mesajul tau aici..." required></textarea>
+                  <span class="field-error" id="messageError"></span>
+                </div>
+
+                <div class="form-group checkbox-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" id="gdpr" name="gdpr" required />
+                    <span class="checkmark"></span>
+                    Sunt de acord cu <a href="#">Politica de Confidentialitate</a> si prelucrarea datelor personale.
+                    <span class="required">*</span>
+                  </label>
+                  <span class="field-error" id="gdprError"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">
+                  Trimite Mesajul
+                </button>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section class="section section-alt">
+      <div class="container">
+        <div style="text-align:center; margin-bottom:2rem;">
+          <p class="section-label">Locatie</p>
+          <h2 class="section-title">Ne gasesti in Timisoara</h2>
+        </div>
+        <div class="map-placeholder">
+          <div class="map-pin">&#128205;</div>
+          <p>Timisoara, Romania</p>
+          <span>Harta interactiva</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">Feline<span>World</span></a>
+          <p>Un spatiu dedicat raselor de pisici si celor care le iubesc.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigare</h4>
+          <ul>
+            <li><a href="index.html">Acasa</a></li>
+            <li><a href="rase.html">Rase</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Rase</h4>
+          <ul>
+            <li><a href="rase.html#ragdoll">Ragdoll</a></li>
+            <li><a href="rase.html#bengal">Bengal</a></li>
+            <li><a href="rase.html#mainecoon">Maine Coon</a></li>
+            <li><a href="rase.html#british">British Shorthair</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 FelineWorld. Realizat cu <span style="color:var(--caramel);">&#9829;</span> pentru pasionatii de pisici.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
